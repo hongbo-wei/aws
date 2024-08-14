@@ -1,5 +1,6 @@
 # Credit:
-Author [Tarek Kaddoumi](https://www.linkedin.com/in/tarekkaddoumi/), Senior Solutions Architect at [Amazon Web Services (AWS)](https://aws.amazon.com/)
+Original Author [Tarek Kaddoumi](https://www.linkedin.com/in/tarekkaddoumi/), Senior Solutions Architect at [Amazon Web Services (AWS)](https://aws.amazon.com/)
+Original file: Bedrock/main.js
 
 ## aws
 I did my own modification on this real-world project build with Amazon Web Services (AWS) 📙
