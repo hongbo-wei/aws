@@ -59,6 +59,8 @@ Let's try the app by installing dependencies and running it.
     2. A popup message may appear asking if you want to open the app in the browser, select this or select the network URL that is displayed in the terminal
 4. Ensure the app loads and you can see the web page is rendered and you can click on the button.
 
+**Additional**: Build Vite Project: Run `npm run build` to generate the production-ready assets in the `dist` folder.
+
 ### Configure Environment Variables
 
 The next section ensures your app can communicate with AWS to use Amazon Bedrock.
@@ -76,13 +78,12 @@ Your Workshop Studio account is configured with an access key and secret to prov
 
 > [AWS Documentation: AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
 > 
-1. In **Visual Studio Code Server**, open the **.env** file (if it doesn't exist, creat one). This file stores your environment variables so you can access Amazon Bedrock securely.
+1. In **Visual Studio Code Server**, open the **.env** file (if it doesn't exist, creat one). This file stores your environment variables so you can access Amazon Bedrock securely. No need VITE_AWS_SESSION_TOKEN.
     
     ```
     VITE_AWS_DEFAULT_REGION=
     VITE_AWS_ACCESS_KEY_ID=
     VITE_AWS_SECRET_ACCESS_KEY=
-    VITE_AWS_SESSION_TOKEN=
     ```
     
 2. Only environment variables starting with **VITE_** are exposed to the app.
@@ -104,12 +105,10 @@ Your Workshop Studio account is configured with an access key and secret to prov
     VITE_AWS_DEFAULT_REGION=
     VITE_AWS_ACCESS_KEY_ID=
     VITE_AWS_SECRET_ACCESS_KEY=
-    VITE_AWS_SESSION_TOKEN=
     
     set AWS_DEFAULT_REGION=us-west-2
     set AWS_ACCESS_KEY_ID=ABCDEFIGHIGJ
     set AWS_SECRET_ACCESS_KEY=ABCDEFIGHIGJKLMNOPQRSTUVWXYZ
-    set AWS_SESSION_TOKEN=ABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZ
     ```
     
 10. *Please note that the variable values above are samples, do not copy these into your own files, as they will not work.*
@@ -126,5 +125,4 @@ The end result should look like this, regardless of which method you use:
 VITE_AWS_DEFAULT_REGION=us-west-2
 VITE_AWS_ACCESS_KEY_ID=ABCDEFIGHIGJ
 VITE_AWS_SECRET_ACCESS_KEY=ABCDEFIGHIGJKLMNOPQRSTUVWXYZ
-VITE_AWS_SESSION_TOKEN=ABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZABCDEFIGHIGJKLMNOPQRSTUVWXYZ
 ```
