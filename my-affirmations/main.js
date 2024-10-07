@@ -4,15 +4,14 @@ import { BedrockRuntimeClient, ConverseCommand } from "@aws-sdk/client-bedrock-r
 // const modelId = 'anthropic.claude-v2';
 const modelId =  'anthropic.claude-3-haiku-20240307-v1:0';
 // const prompt_origin = "Give me an affirmation to boost my motivation today, referencing plants, animals, or flowers by adding emoji. Don't show the prompt, only the quote. Do not add anything like Here is an affirmation... just return the affirmation alone";
-// const prompt_aws = "Give me an affirmation to boost my motivation today, telling me, Hongbo Wei, that I will get a decent job at Amazon Web Service (AWS) soon, referencing referencing plants, animals, or flowers by adding emoji. Don't show the prompt, only the quote. Do not add anything like Here is an affirmation... just return the affirmation alone";
-const prompt_boxing = "Give me an affirmation to boost my motivation today, telling me, Hongbo Wei, that I will become a world boxing champion, referencing plants, animals, or flowers by adding emojis. Don't show the prompt, only the quote. Do not add anything like Here is an affirmation... just return the affirmation alone";
-// const prompt_congrats = "Congrats my friend Amman for being selected as a Millennium Fellow for the Class of 2024 of the Millennium Campus Network (MCN) Fellowship by United Nations Academic Impact, referencing plants, animals, or flowers by adding emoji. Don't show the prompt, only the quote. Do not add anything addtional... just return the message alone"
+const prompt_aws = "Give me an affirmation to boost my motivation today, telling me, Hongbo Wei, that I will get a decent job at Amazon Web Service (AWS) soon, referencing referencing plants, animals, or flowers by adding emoji. Don't show the prompt, only the quote. Do not add anything like Here is an affirmation... just return the affirmation alone";
+// const prompt_boxing = "Give me an affirmation to boost my motivation today, telling me, Hongbo Wei, that I will become a world boxing champion, referencing plants, animals, or flowers by adding emojis. Don't show the prompt, only the quote. Do not add anything like Here is an affirmation... just return the affirmation alone";
 // const prompt_msc = "Give me an affirmation to boost my motivation today, telling me, Hongbo Wei, that I will get a distinction MSc degree at the University of Birmnigham Dubai soon,, referencing plants, animals, or flowers by adding emoji. Don't show the prompt, only the quote itself. No quotation marks. Do not add anything addtional... just return the message alone"
 
 const conversation = [
   {
     role: "user",
-    content: [{ text: prompt_boxing }],
+    content: [{ text: prompt_aws }],
   },
 ];
 
