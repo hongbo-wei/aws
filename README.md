@@ -15,25 +15,6 @@ I will bring more real-world projects with AWS.
     - [Run the app](#run-the-app)
     - [Configure Environment Variables](#configure-environment-variables)
 
-## Running the App
-
-### Virtualenv
-
-- Install “virtualenv” package if not already installed.
-    - `pip install virtualenv`
-- Set up virtual environment
-    ```
-    virtualenv venv
-    ```
-
-- Activate virtual environment
-    ```
-    source venv/bin/activate
-    ```
-
-- Deactivate virtual environment
-    - `deactivate` or `source deactivate`
-
 ### Dependencies
 - [Node](https://nodejs.org/en/download)
 - [Git](https://github.com/git-guides/install-git/)

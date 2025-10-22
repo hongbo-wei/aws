@@ -1,6 +1,8 @@
-#Run the application
-```
-source venv/bin/activate
-cd my-affirmations
+# Run the application
+
+```bash
+
+npm install
 npm run dev
+
 ```
