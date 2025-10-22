@@ -1,4 +1,3 @@
-venv
 my-affirmations/.env
-my-affirmations/node_modules
 my-affirmations/package-lock.json
+*node_modules
